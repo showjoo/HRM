@@ -3,6 +3,6 @@ namespace ApplicationCore.Contracts.Services;
 
 public interface IJobService
 {
-    List<JobResponseModel> GetAllJobs();
-    JobResponseModel GetJobById(int id);
+    Task<List<JobResponseModel>> GetAllJobs();
+    Task<JobResponseModel> GetJobById(int id);
 }

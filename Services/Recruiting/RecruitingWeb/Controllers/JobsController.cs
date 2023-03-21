@@ -13,16 +13,20 @@ public class JobsController : Controller
     }
     // GET
     [HttpGet]
-    public IActionResult Index()
+    public async Task<IActionResult> Index()
     {
-        var jobs = _jobService.GetAllJobs();
-        return View();
+        var jobs = await _jobService.GetAllJobs();
+        return View(jobs);
     }
     // GET
     [HttpGet]
-    public IActionResult Details(int id)
+    public async Task<IActionResult> Details(int id)
     {
-        var jobs = _jobService.GetJobById(3);
+        var jobs = await _jobService.GetJobById(3);
+        return View(jobs);
+    }
+    public IActionResult Create()
+    {
         return View();
     }
 }
