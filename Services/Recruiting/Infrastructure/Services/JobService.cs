@@ -22,7 +22,7 @@ public class JobService : IJobService
         foreach (var job in jobs)
             jobsResponseModel.Add(new JobResponseModel
             {
-                Id = job.Id, Description = job.Description, Title = job.Title,
+                Id = job.Id, JobCode = job.JobCode, Description = job.Description, Title = job.Title,
                 StartDate = job.StartDate.GetValueOrDefault(), NumberOfPositions = job.NumberOfPositions
             });
 
@@ -34,7 +34,8 @@ public class JobService : IJobService
         var job = await _jobRepository.GetJobById(id);
         var jobResponseModel = new JobResponseModel
         {
-            Id = job.Id, Title = job.Title, StartDate = job.StartDate.GetValueOrDefault(), Description = job.Description
+            Id = job.Id, JobCode = job.JobCode, Title = job.Title, StartDate = job.StartDate.GetValueOrDefault(), 
+            Description = job.Description, NumberOfPositions = job.NumberOfPositions
         };
         return jobResponseModel;
     }
@@ -45,7 +46,7 @@ public class JobService : IJobService
         {
             Title = model.Title, StartDate = model.StartDate, Description = model.Description,
             CreatedOn = DateTime.UtcNow, NumberOfPositions = model.NumberOfPositions,
-            JobStatusLookUpId = 4
+            JobStatusLookUpId = 4,
 
         };
 

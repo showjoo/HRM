@@ -6,19 +6,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3042098c-c1b2-40ae-a826-d16598111e32" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Services/Recruiting/ApplicationCore/Models/JobStatusModel.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.HRM/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.HRM/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Services/Recruiting/ApplicationCore/Contracts/Repositories/IJobRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Services/Recruiting/ApplicationCore/Contracts/Repositories/IJobRepository.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Services/Recruiting/ApplicationCore/Contracts/Repositories/IRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Services/Recruiting/ApplicationCore/Contracts/Repositories/IRepository.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Services/Recruiting/ApplicationCore/Contracts/Services/IJobService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Services/Recruiting/ApplicationCore/Contracts/Services/IJobService.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Services/Recruiting/ApplicationCore/Models/JobRequestModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Services/Recruiting/ApplicationCore/Models/JobRequestModel.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/Recruiting/ApplicationCore/Models/JobResponseModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Services/Recruiting/ApplicationCore/Models/JobResponseModel.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Services/Recruiting/ApplicationCore/bin/Debug/net7.0/ApplicationCore.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Services/Recruiting/ApplicationCore/bin/Debug/net7.0/ApplicationCore.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Services/Recruiting/ApplicationCore/bin/Debug/net7.0/ApplicationCore.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Services/Recruiting/ApplicationCore/bin/Debug/net7.0/ApplicationCore.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/Recruiting/ApplicationCore/obj/Debug/net7.0/ApplicationCore.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Services/Recruiting/ApplicationCore/obj/Debug/net7.0/ApplicationCore.csproj.CoreCompileInputs.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Services/Recruiting/ApplicationCore/obj/Debug/net7.0/ApplicationCore.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Services/Recruiting/ApplicationCore/obj/Debug/net7.0/ApplicationCore.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Services/Recruiting/ApplicationCore/obj/Debug/net7.0/ApplicationCore.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Services/Recruiting/ApplicationCore/obj/Debug/net7.0/ApplicationCore.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Services/Recruiting/ApplicationCore/obj/Debug/net7.0/ref/ApplicationCore.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Services/Recruiting/ApplicationCore/obj/Debug/net7.0/ref/ApplicationCore.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Services/Recruiting/ApplicationCore/obj/Debug/net7.0/refint/ApplicationCore.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Services/Recruiting/ApplicationCore/obj/Debug/net7.0/refint/ApplicationCore.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Services/Recruiting/Infrastructure/Repositories/JobRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Services/Recruiting/Infrastructure/Repositories/JobRepository.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Services/Recruiting/Infrastructure/Repositories/Repository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Services/Recruiting/Infrastructure/Repositories/Repository.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Services/Recruiting/Infrastructure/Services/JobService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Services/Recruiting/Infrastructure/Services/JobService.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Services/Recruiting/Infrastructure/bin/Debug/net7.0/ApplicationCore.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Services/Recruiting/Infrastructure/bin/Debug/net7.0/ApplicationCore.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Services/Recruiting/Infrastructure/bin/Debug/net7.0/ApplicationCore.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Services/Recruiting/Infrastructure/bin/Debug/net7.0/ApplicationCore.pdb" afterDir="false" />
@@ -27,9 +25,10 @@
       <change beforePath="$PROJECT_DIR$/Services/Recruiting/Infrastructure/obj/Debug/net7.0/Infrastructure.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Services/Recruiting/Infrastructure/obj/Debug/net7.0/Infrastructure.csproj.AssemblyReference.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Services/Recruiting/Infrastructure/obj/Debug/net7.0/Infrastructure.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Services/Recruiting/Infrastructure/obj/Debug/net7.0/Infrastructure.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Services/Recruiting/Infrastructure/obj/Debug/net7.0/Infrastructure.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Services/Recruiting/Infrastructure/obj/Debug/net7.0/Infrastructure.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Services/Recruiting/Infrastructure/obj/Debug/net7.0/ref/Infrastructure.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Services/Recruiting/Infrastructure/obj/Debug/net7.0/ref/Infrastructure.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Services/Recruiting/Infrastructure/obj/Debug/net7.0/refint/Infrastructure.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Services/Recruiting/Infrastructure/obj/Debug/net7.0/refint/Infrastructure.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Services/Recruiting/RecruitingWeb/Controllers/JobsController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Services/Recruiting/RecruitingWeb/Controllers/JobsController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/Recruiting/RecruitingWeb/Views/Shared/_Layout.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Services/Recruiting/RecruitingWeb/Views/Shared/_Layout.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/Recruiting/RecruitingWeb/Views/jobs/Create.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Services/Recruiting/RecruitingWeb/Views/jobs/Create.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/Recruiting/RecruitingWeb/Views/jobs/Index.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Services/Recruiting/RecruitingWeb/Views/jobs/Index.cshtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Services/Recruiting/RecruitingWeb/bin/Debug/net7.0/ApplicationCore.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Services/Recruiting/RecruitingWeb/bin/Debug/net7.0/ApplicationCore.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Services/Recruiting/RecruitingWeb/bin/Debug/net7.0/ApplicationCore.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Services/Recruiting/RecruitingWeb/bin/Debug/net7.0/ApplicationCore.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Services/Recruiting/RecruitingWeb/bin/Debug/net7.0/Infrastructure.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Services/Recruiting/RecruitingWeb/bin/Debug/net7.0/Infrastructure.dll" afterDir="false" />
@@ -135,7 +134,7 @@
       <workItem from="1678840760228" duration="1438000" />
       <workItem from="1678923269134" duration="4092000" />
       <workItem from="1679271655004" duration="3465000" />
-      <workItem from="1679358625382" duration="5426000" />
+      <workItem from="1679358625382" duration="16012000" />
     </task>
     <servers />
   </component>

@@ -20,4 +20,7 @@ public class JobRequestModel
     
     [Required(ErrorMessage = "Please enter number")]
     public int NumberOfPositions { get; set; }
+
+    [Required(ErrorMessage = "Please select 1 JobStatus")]
+    public int JobStatus { get; set; }
 }

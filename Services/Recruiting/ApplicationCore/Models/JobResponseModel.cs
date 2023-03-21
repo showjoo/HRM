@@ -7,4 +7,6 @@ public class JobResponseModel
     public string Description { get; set; }
     public DateTime StartDate { get; set; }
     public int NumberOfPositions { get; set; }
+    
+    public Guid JobCode { get; set; }
 }
