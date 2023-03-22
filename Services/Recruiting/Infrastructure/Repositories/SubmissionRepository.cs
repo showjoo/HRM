@@ -13,9 +13,21 @@ public class SubmissionRepository: Repository<Submission>,ISubmissionRepository
         _dbContext = dbContext;
     }
 
-    public async Task<List<Submission>> GetSubmissionById(int id)
+    public async Task<List<Submission>> GetSubmissionByJobId(int id)
     {
-        var submission = await _dbContext.Submissions.Where(s => s.Id == id).ToListAsync();
+        var submission = await _dbContext.Submissions.Where(s => s.JobId == id).ToListAsync();
+        return submission;
+    }
+
+    public async Task<Submission> GetSubmissionById(int id)
+    {
+        var submission = await _dbContext.Submissions.Where(s => s.Id == id).FirstOrDefaultAsync();
+        return submission;
+    }
+
+    public async Task<List<Submission>> GetAllSubmission()
+    {
+        var submission = await _dbContext.Submissions.ToListAsync();
         return submission;
     }
 }

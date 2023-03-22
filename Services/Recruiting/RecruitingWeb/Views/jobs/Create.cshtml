@@ -37,11 +37,13 @@
                 <input asp-for="NumberOfPositions" class="form-control" />
                 <span asp-validation-for="NumberOfPositions" class="text-danger"></span>
             </div>
-            <!--
+            
             <div class="form-group">
-               at-sign Html.DropDownList("JobStatus", ViewBag.JobStatus as SelectList,"Select JobStatus",new {at-sign class="form-control"})
+                <label asp-for="JobStatus" class="control-label"></label>
+                @Html.DropDownList("JobStatus", new SelectList(@ViewBag.JobStatus, "Id", "Status", Model.JobStatus),
+                    "Select JobStatus", new { @class = "form-control" })
             </div> 
-            -->
+            
             <div class="form-group">
                 <input type="submit" value="Create" class="btn btn-primary" />
             </div>

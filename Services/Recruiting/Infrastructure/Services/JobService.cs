@@ -32,6 +32,11 @@ public class JobService : IJobService
     public async  Task< JobResponseModel> GetJobById(int id)
     {
         var job = await _jobRepository.GetJobById(id);
+        if (job == null)
+        {
+            return null;
+        }
+
         var jobResponseModel = new JobResponseModel
         {
             Id = job.Id, JobCode = job.JobCode, Title = job.Title, StartDate = job.StartDate.GetValueOrDefault(), 
@@ -46,7 +51,7 @@ public class JobService : IJobService
         {
             Title = model.Title, StartDate = model.StartDate, Description = model.Description,
             CreatedOn = DateTime.UtcNow, NumberOfPositions = model.NumberOfPositions,
-            JobStatusLookUpId = 4,
+            JobStatusLookUpId = 4, JobCode = Guid.NewGuid()
 
         };
 

@@ -3,12 +3,16 @@ namespace ApplicationCore.Models;
 
 public class SubmissionRequestModel
 {
-    public int Id { get; set; }
-    [Required(ErrorMessage = "Please enter title of the job")]
-    [StringLength(256)]
-    public string Title { get; set; }
+    public int JobId { get; set; }
+    [Required(ErrorMessage = "Please enter your first name")]
+    [StringLength(50)]
+    public string FirstName { get; set; }
     
-    [Required(ErrorMessage = "Please enter Job Description")]
-    [StringLength(5000)]
-    public string Description { get; set; }
+    [Required(ErrorMessage = "Please enter your Last name")]
+    [StringLength(50)]
+    public string LastName { get; set; }
+    
+    [Required(ErrorMessage = "Please enter your Email")]
+    [StringLength(512)]
+    public string Email { get; set; }
 }

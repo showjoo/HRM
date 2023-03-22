@@ -31,19 +31,19 @@ public class JobsController : Controller
     [HttpGet]
     public IActionResult Create()
     {
-        return View();
-    }
-
-    [HttpPost]
-    public async Task<IActionResult> Create(JobRequestModel model)
-    {
         List<JobStatusModel> ListJobStatus = new List<JobStatusModel>()
         {
             new JobStatusModel() {Id = 4, Status="Open" },
             new JobStatusModel() {Id = 5, Status="Pending" },
             new JobStatusModel() {Id = 6, Status="Closed" },
         };
-        ViewBag.JobStatus = new SelectList(ListJobStatus, "Id", "Status",model.JobStatus);
+        ViewBag.JobStatus = ListJobStatus;
+        return View(new JobRequestModel());
+    }
+
+    [HttpPost]
+    public async Task<IActionResult> Create(JobRequestModel model)
+    {
         // check if the model is valid, on the server
         if (!ModelState.IsValid)
         {
