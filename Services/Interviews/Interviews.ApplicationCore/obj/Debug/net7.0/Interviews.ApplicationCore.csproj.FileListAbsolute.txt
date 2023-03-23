@@ -1,0 +1,12 @@
+/Users/showjoo/Desktop/icc/Antra/HRM/Services/Interviews/Interviews.ApplicationCore/bin/Debug/net7.0/Interviews.ApplicationCore.deps.json
+/Users/showjoo/Desktop/icc/Antra/HRM/Services/Interviews/Interviews.ApplicationCore/bin/Debug/net7.0/Interviews.ApplicationCore.dll
+/Users/showjoo/Desktop/icc/Antra/HRM/Services/Interviews/Interviews.ApplicationCore/bin/Debug/net7.0/Interviews.ApplicationCore.pdb
+/Users/showjoo/Desktop/icc/Antra/HRM/Services/Interviews/Interviews.ApplicationCore/obj/Debug/net7.0/Interviews.ApplicationCore.csproj.AssemblyReference.cache
+/Users/showjoo/Desktop/icc/Antra/HRM/Services/Interviews/Interviews.ApplicationCore/obj/Debug/net7.0/Interviews.ApplicationCore.GeneratedMSBuildEditorConfig.editorconfig
+/Users/showjoo/Desktop/icc/Antra/HRM/Services/Interviews/Interviews.ApplicationCore/obj/Debug/net7.0/Interviews.ApplicationCore.AssemblyInfoInputs.cache
+/Users/showjoo/Desktop/icc/Antra/HRM/Services/Interviews/Interviews.ApplicationCore/obj/Debug/net7.0/Interviews.ApplicationCore.AssemblyInfo.cs
+/Users/showjoo/Desktop/icc/Antra/HRM/Services/Interviews/Interviews.ApplicationCore/obj/Debug/net7.0/Interviews.ApplicationCore.csproj.CoreCompileInputs.cache
+/Users/showjoo/Desktop/icc/Antra/HRM/Services/Interviews/Interviews.ApplicationCore/obj/Debug/net7.0/Interviews.ApplicationCore.dll
+/Users/showjoo/Desktop/icc/Antra/HRM/Services/Interviews/Interviews.ApplicationCore/obj/Debug/net7.0/refint/Interviews.ApplicationCore.dll
+/Users/showjoo/Desktop/icc/Antra/HRM/Services/Interviews/Interviews.ApplicationCore/obj/Debug/net7.0/Interviews.ApplicationCore.pdb
+/Users/showjoo/Desktop/icc/Antra/HRM/Services/Interviews/Interviews.ApplicationCore/obj/Debug/net7.0/ref/Interviews.ApplicationCore.dll

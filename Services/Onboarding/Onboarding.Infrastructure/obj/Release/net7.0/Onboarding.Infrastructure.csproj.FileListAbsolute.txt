@@ -1,0 +1,15 @@
+/Users/showjoo/Desktop/icc/Antra/HRM/Services/Onboarding/Onboarding.Infrastructure/bin/Release/net7.0/Onboarding.Infrastructure.deps.json
+/Users/showjoo/Desktop/icc/Antra/HRM/Services/Onboarding/Onboarding.Infrastructure/bin/Release/net7.0/Onboarding.Infrastructure.dll
+/Users/showjoo/Desktop/icc/Antra/HRM/Services/Onboarding/Onboarding.Infrastructure/bin/Release/net7.0/Onboarding.Infrastructure.pdb
+/Users/showjoo/Desktop/icc/Antra/HRM/Services/Onboarding/Onboarding.Infrastructure/bin/Release/net7.0/Onboarding.ApplicationCore.dll
+/Users/showjoo/Desktop/icc/Antra/HRM/Services/Onboarding/Onboarding.Infrastructure/bin/Release/net7.0/Onboarding.ApplicationCore.pdb
+/Users/showjoo/Desktop/icc/Antra/HRM/Services/Onboarding/Onboarding.Infrastructure/obj/Release/net7.0/Onboarding.Infrastructure.csproj.AssemblyReference.cache
+/Users/showjoo/Desktop/icc/Antra/HRM/Services/Onboarding/Onboarding.Infrastructure/obj/Release/net7.0/Onboarding.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+/Users/showjoo/Desktop/icc/Antra/HRM/Services/Onboarding/Onboarding.Infrastructure/obj/Release/net7.0/Onboarding.Infrastructure.AssemblyInfoInputs.cache
+/Users/showjoo/Desktop/icc/Antra/HRM/Services/Onboarding/Onboarding.Infrastructure/obj/Release/net7.0/Onboarding.Infrastructure.AssemblyInfo.cs
+/Users/showjoo/Desktop/icc/Antra/HRM/Services/Onboarding/Onboarding.Infrastructure/obj/Release/net7.0/Onboarding.Infrastructure.csproj.CoreCompileInputs.cache
+/Users/showjoo/Desktop/icc/Antra/HRM/Services/Onboarding/Onboarding.Infrastructure/obj/Release/net7.0/Onboarding.Infrastructure.csproj.CopyComplete
+/Users/showjoo/Desktop/icc/Antra/HRM/Services/Onboarding/Onboarding.Infrastructure/obj/Release/net7.0/Onboarding.Infrastructure.dll
+/Users/showjoo/Desktop/icc/Antra/HRM/Services/Onboarding/Onboarding.Infrastructure/obj/Release/net7.0/refint/Onboarding.Infrastructure.dll
+/Users/showjoo/Desktop/icc/Antra/HRM/Services/Onboarding/Onboarding.Infrastructure/obj/Release/net7.0/Onboarding.Infrastructure.pdb
+/Users/showjoo/Desktop/icc/Antra/HRM/Services/Onboarding/Onboarding.Infrastructure/obj/Release/net7.0/ref/Onboarding.Infrastructure.dll

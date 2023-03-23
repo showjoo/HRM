@@ -1,0 +1,15 @@
+/Users/showjoo/Desktop/icc/Antra/HRM/Services/Interviews/Interviews.Infrastructure/bin/Debug/net7.0/Interviews.Infrastructure.deps.json
+/Users/showjoo/Desktop/icc/Antra/HRM/Services/Interviews/Interviews.Infrastructure/bin/Debug/net7.0/Interviews.Infrastructure.dll
+/Users/showjoo/Desktop/icc/Antra/HRM/Services/Interviews/Interviews.Infrastructure/bin/Debug/net7.0/Interviews.Infrastructure.pdb
+/Users/showjoo/Desktop/icc/Antra/HRM/Services/Interviews/Interviews.Infrastructure/bin/Debug/net7.0/Interviews.ApplicationCore.dll
+/Users/showjoo/Desktop/icc/Antra/HRM/Services/Interviews/Interviews.Infrastructure/bin/Debug/net7.0/Interviews.ApplicationCore.pdb
+/Users/showjoo/Desktop/icc/Antra/HRM/Services/Interviews/Interviews.Infrastructure/obj/Debug/net7.0/Interviews.Infrastructure.csproj.AssemblyReference.cache
+/Users/showjoo/Desktop/icc/Antra/HRM/Services/Interviews/Interviews.Infrastructure/obj/Debug/net7.0/Interviews.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+/Users/showjoo/Desktop/icc/Antra/HRM/Services/Interviews/Interviews.Infrastructure/obj/Debug/net7.0/Interviews.Infrastructure.AssemblyInfoInputs.cache
+/Users/showjoo/Desktop/icc/Antra/HRM/Services/Interviews/Interviews.Infrastructure/obj/Debug/net7.0/Interviews.Infrastructure.AssemblyInfo.cs
+/Users/showjoo/Desktop/icc/Antra/HRM/Services/Interviews/Interviews.Infrastructure/obj/Debug/net7.0/Interviews.Infrastructure.csproj.CoreCompileInputs.cache
+/Users/showjoo/Desktop/icc/Antra/HRM/Services/Interviews/Interviews.Infrastructure/obj/Debug/net7.0/Interviews.Infrastructure.csproj.CopyComplete
+/Users/showjoo/Desktop/icc/Antra/HRM/Services/Interviews/Interviews.Infrastructure/obj/Debug/net7.0/Interviews.Infrastructure.dll
+/Users/showjoo/Desktop/icc/Antra/HRM/Services/Interviews/Interviews.Infrastructure/obj/Debug/net7.0/refint/Interviews.Infrastructure.dll
+/Users/showjoo/Desktop/icc/Antra/HRM/Services/Interviews/Interviews.Infrastructure/obj/Debug/net7.0/Interviews.Infrastructure.pdb
+/Users/showjoo/Desktop/icc/Antra/HRM/Services/Interviews/Interviews.Infrastructure/obj/Debug/net7.0/ref/Interviews.Infrastructure.dll

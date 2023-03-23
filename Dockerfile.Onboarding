@@ -1,0 +1,23 @@
+﻿FROM mcr.microsoft.com/dotnet/aspnet:7.0-bullseye-slim-amd64 AS base
+WORKDIR /app
+EXPOSE 80
+EXPOSE 443
+
+FROM mcr.microsoft.com/dotnet/sdk:7.0 AS build
+WORKDIR /src
+COPY ["Services/Onboarding/Onboarding.API/Onboarding.API.csproj", "Services/Onboarding/Onboarding.API/"]
+COPY ["Services/Onboarding/Onboarding.ApplicationCore/Onboarding.ApplicationCore.csproj", "Services/Onboarding/Onboarding.ApplicationCore/"]
+COPY ["Services/Onboarding/Onboarding.Infrastructure/Onboarding.Infrastructure.csproj", "Services/Onboarding/Onboarding.Infrastructure/"]
+RUN dotnet restore "Services/Onboarding/Onboarding.API/Onboarding.API.csproj"
+COPY . .
+WORKDIR "/src/Services/Onboarding/Onboarding.API"
+RUN dotnet build "Onboarding.API.csproj" -c Release -o /app/build
+
+FROM build AS publish
+RUN dotnet publish "Onboarding.API.csproj" -c Release -o /app/publish -r linux-x64 --self-contained false
+
+FROM base AS final
+WORKDIR /app
+COPY --from=publish /app/publish .
+ENV MSSQLConnectionString = "Server=localhost;Database=RecruitingDb;User=sa;Password=StrngPwd1234;TrustServerCertificate=True;"
+ENTRYPOINT ["dotnet", "Onboarding.API.dll"]

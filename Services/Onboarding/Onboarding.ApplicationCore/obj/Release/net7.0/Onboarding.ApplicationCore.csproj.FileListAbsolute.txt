@@ -1,0 +1,12 @@
+/Users/showjoo/Desktop/icc/Antra/HRM/Services/Onboarding/Onboarding.ApplicationCore/bin/Release/net7.0/Onboarding.ApplicationCore.deps.json
+/Users/showjoo/Desktop/icc/Antra/HRM/Services/Onboarding/Onboarding.ApplicationCore/bin/Release/net7.0/Onboarding.ApplicationCore.dll
+/Users/showjoo/Desktop/icc/Antra/HRM/Services/Onboarding/Onboarding.ApplicationCore/bin/Release/net7.0/Onboarding.ApplicationCore.pdb
+/Users/showjoo/Desktop/icc/Antra/HRM/Services/Onboarding/Onboarding.ApplicationCore/obj/Release/net7.0/Onboarding.ApplicationCore.csproj.AssemblyReference.cache
+/Users/showjoo/Desktop/icc/Antra/HRM/Services/Onboarding/Onboarding.ApplicationCore/obj/Release/net7.0/Onboarding.ApplicationCore.GeneratedMSBuildEditorConfig.editorconfig
+/Users/showjoo/Desktop/icc/Antra/HRM/Services/Onboarding/Onboarding.ApplicationCore/obj/Release/net7.0/Onboarding.ApplicationCore.AssemblyInfoInputs.cache
+/Users/showjoo/Desktop/icc/Antra/HRM/Services/Onboarding/Onboarding.ApplicationCore/obj/Release/net7.0/Onboarding.ApplicationCore.AssemblyInfo.cs
+/Users/showjoo/Desktop/icc/Antra/HRM/Services/Onboarding/Onboarding.ApplicationCore/obj/Release/net7.0/Onboarding.ApplicationCore.csproj.CoreCompileInputs.cache
+/Users/showjoo/Desktop/icc/Antra/HRM/Services/Onboarding/Onboarding.ApplicationCore/obj/Release/net7.0/Onboarding.ApplicationCore.dll
+/Users/showjoo/Desktop/icc/Antra/HRM/Services/Onboarding/Onboarding.ApplicationCore/obj/Release/net7.0/refint/Onboarding.ApplicationCore.dll
+/Users/showjoo/Desktop/icc/Antra/HRM/Services/Onboarding/Onboarding.ApplicationCore/obj/Release/net7.0/Onboarding.ApplicationCore.pdb
+/Users/showjoo/Desktop/icc/Antra/HRM/Services/Onboarding/Onboarding.ApplicationCore/obj/Release/net7.0/ref/Onboarding.ApplicationCore.dll
