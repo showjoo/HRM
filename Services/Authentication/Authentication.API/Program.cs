@@ -1,3 +1,8 @@
+using Authentication.API.Data;
+using Authentication.API.Entities;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.EntityFrameworkCore;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -7,12 +12,16 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-var dockerConnectionString = Environment.GetEnvironmentVariable("MSSQLConnectionString");
+//var dockerConnectionString = Environment.GetEnvironmentVariable("MSSQLConnectionString");
 // Inject our ConnectionString into DbContext
-//builder.Services.AddDbContext<RecruitingDbContext>(
-//    options => options.UseSqlServer(builder.Configuration.GetConnectionString("RecruitingDbConnection"))
-//);
+builder.Services.AddDbContext<AuthenticationDbContext>(
+    options => options.UseSqlServer(builder.Configuration.GetConnectionString("AuthenticationDbConnection"))
+);
 //builder.Services.AddDbContext<RecruitingDbContext>(options => options.UseSqlServer(dockerConnectionString));
+// Specific to Identity Database
+builder.Services.AddIdentity<User, Role>()
+    .AddEntityFrameworkStores<AuthenticationDbContext>()
+    .AddDefaultTokenProviders();
 
 var app = builder.Build();
 
