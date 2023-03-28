@@ -13,3 +13,5 @@
 /Users/showjoo/Desktop/icc/Antra/HRM/Services/Interviews/Interviews.Infrastructure/obj/Debug/net7.0/refint/Interviews.Infrastructure.dll
 /Users/showjoo/Desktop/icc/Antra/HRM/Services/Interviews/Interviews.Infrastructure/obj/Debug/net7.0/Interviews.Infrastructure.pdb
 /Users/showjoo/Desktop/icc/Antra/HRM/Services/Interviews/Interviews.Infrastructure/obj/Debug/net7.0/ref/Interviews.Infrastructure.dll
+/Users/showjoo/Desktop/icc/Antra/HRM/Services/Interviews/Interviews.Infrastructure/bin/Debug/net7.0/Interviews.Infrastructure.runtimeconfig.json
+/Users/showjoo/Desktop/icc/Antra/HRM/Services/Interviews/Interviews.Infrastructure/obj/Debug/net7.0/Interviews.Infrastructure.genruntimeconfig.cache

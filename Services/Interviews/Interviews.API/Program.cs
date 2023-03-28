@@ -1,3 +1,6 @@
+using Interviews.Infrastructure.Data;
+using Microsoft.EntityFrameworkCore;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -13,6 +16,8 @@ var dockerConnectionString = Environment.GetEnvironmentVariable("MSSQLConnection
 //    options => options.UseSqlServer(builder.Configuration.GetConnectionString("RecruitingDbConnection"))
 //);
 //builder.Services.AddDbContext<RecruitingDbContext>(options => options.UseSqlServer(dockerConnectionString));
+builder.Services.AddDbContext<InterviewsDbContext>(options =>
+    options.UseSqlServer(builder.Configuration.GetConnectionString("InterviewsDbConnection")));
 
 var app = builder.Build();
 
