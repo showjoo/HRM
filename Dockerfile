@@ -5,17 +5,19 @@ EXPOSE 443
 
 FROM mcr.microsoft.com/dotnet/sdk:7.0 AS build
 WORKDIR /src
-COPY ["Services/Authentication/Authentication.API/Authentication.API.csproj", "Services/Authentication/Authentication.API/"]
-RUN dotnet restore "Services/Authentication/Authentication.API/Authentication.API.csproj"
+COPY ["Services/Recruiting/Recruiting.API/Recruiting.API.csproj", "Services/Recruiting/Recruiting.API/"]
+COPY ["Services/Recruiting/ApplicationCore/ApplicationCore.csproj", "Services/Recruiting/ApplicationCore/"]
+COPY ["Services/Recruiting/Infrastructure/Infrastructure.csproj", "Services/Recruiting/Infrastructure/"]
+RUN dotnet restore "Services/Recruiting/Recruiting.API/Recruiting.API.csproj"
 COPY . .
-WORKDIR "/src/Services/Authentication/Authentication.API"
-RUN dotnet build "Authentication.API.csproj" -c Release -o /app/build
+WORKDIR "/src/Services/Recruiting/Recruiting.API"
+RUN dotnet build "Recruiting.API.csproj" -c Release -o /app/build
 
 FROM build AS publish
-RUN dotnet publish "Authentication.API.csproj" -c Release -o /app/publish -r linux-x64 --self-contained false
+RUN dotnet publish "Recruiting.API.csproj" -c Release -o /app/publish -r linux-x64 --self-contained false
 
 FROM base AS final
 WORKDIR /app
 COPY --from=publish /app/publish .
-ENV MSSQLConnectionString = "Server=localhost;Database=RecruitingDb;User=sa;Password=StrngPwd1234;TrustServerCertificate=True;"
-ENTRYPOINT ["dotnet", "Authentication.API.dll"]
+ENV MSSQLConnectionString='Server=tcp:netfullstackhrm.database.windows.net,1433;Initial Catalog=ReccruitingDb;Persist Security Info=False;User ID=netfullstack;Password=Zhc980824;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;'
+ENTRYPOINT ["dotnet", "Recruiting.API.dll"]

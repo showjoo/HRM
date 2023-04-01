@@ -1,5 +1,5 @@
 namespace Onboarding.ApplicationCore.Entities;
-
+// Hired, Terminated, Pending
 public class EmployeeStatus
 {
     public int Id { get; set; }

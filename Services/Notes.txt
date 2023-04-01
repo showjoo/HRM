@@ -1,0 +1,190 @@
+ADO.NET => lower level API -> write lots of code
+
+Dapper is micro ORM from StackOverflow (collection of extenstion methods)
+Existing database
+Northwind, AdventureWorks
+
+var employees =  db.connection.execute <Employees>("select * from Employee")
+var employees =  db.connection.execute <Employees>("usp_GetEmployee");
+
+ORM => Object Relational Mapper
+data access code simpler and write less amount of code
+
+ Entity Framework -> Saves lots of time in creating/accessing the database
+ 1. You can create complete DB using C# code with code-first approach, concept called Migrations
+ 2. You can access database and CRUD operations with just C# (LINQ) without writing any SQL
+    Dapper/ADO.NET => SELECT * from Jobs where salary > 60000
+                    100000
+    EF             => var employees = Jobs.where(e => e.Salary > 60000).ToList();
+                                      SELECT * from Jobs where salary > 60000
+                      var employees = Jobs.ToList().where(e => e.Salary > 60000).ToList();
+                                      SELECT * from Jobs;
+                                      then the filter > 60000 is gonna happen in memory
+ 3. Can map the data to C# Entities 
+ 
+ 
+ Jobs => Jobs info  Id, Title, Desc, JobCode
+ Candidate => Candidates
+ Submissions => When candidates apply for the job Id, [CandidateId & JobId] => Unique constraint 
+ JobStatusLookUp => Open, Closed, pending closed, postponed
+  
+ Step 1 : Install EF Core tools package globally
+ Step 2 : First create an Entity -> C# object that represents a table in the database
+ Step 3 : Install required EF Core Packages from Nuget in projects
+          Microsoft.EntityFrameworkCore.SqlServer
+          Microsoft.EntityFrameworkCore.Design
+ Step 4 : In EF we have 2 very important classes 
+            DbContext => Represents your database 
+            DbSet => Represents your tables 
+ Step 5 : Create the DbContext class and DbSet properties for the project
+ Step 6 : Create the Database ConnectionString, and establish that connectionString with the DbContext
+            Keep ConnectionStrings if locally in the project in appsettings.json
+            user secrets
+            Azure KeyVault
+            "RecruitingDbConnection": "Server=Abhilash-PC;Database=RecruitingDb;Integrated Security=True;"
+ Step 7 : Establish that connectionString with the DbContext using DI using the AddDbContext method
+ Step 8 : Create your first Migration using dotnet ef tools commands 
+          dotnet ef migrations add InitialMigration -p ../Infrastructure/Infrastructure.csproj
+ Step 9 : Always, check your migration file and see if it has things that you are trying to create.
+ Step 10 :Apply the migration using command
+           dotnet ef database update
+ Step 11 : To Model your database with rules, constraints etc we cam do in two ways
+            1. Data Annotations
+            2. Fluent API 
+            
+            
+  asynchorous programming -> 2002
+  async/await -> 2012  older .net framework 4.5
+  
+  
+  
+  
+  T1
+   public async  Task< IActionResult> Index()
+          {
+             
+             var x = 10;
+             // database
+             // I/O bound -> go to this URL and fetch me some data/image network, file download
+             // database calls
+             // theradpool
+            
+             // waiting 
+             //  prevent Thread starvation
+              var jobs = await _jobService.GetAllJobs(); -> returning task
+              return View();
+              // therad starvation, scalability of our application
+          }
+
+To do validations we use Dataannotations
+
+IRepository<Candidate> -> BaseRepository<Candidate>
+
+Middleware ->  Request  that will request will go thru series of code and they will return back in reverse order
+
+
+R -> M1 (check the user is authenticated, check the http header and maybe read some http info)
+     M2 (some logic)
+     M3
+     
+ 
+Response
+ 
+ Built-in Middlewares
+ Custom middlewares
+ Register them in proper order
+ 
+ 
+ Home Page list all the Jobs -> foe each and every job you should give option (link) to see submissions for the job
+ 
+ Click on Job Title should go to Jobs/Details -> Apply button (POST) to Submissions table
+    Candidate FirstName, LastName, Email (show Job Code and Title)
+    When saving the submission check if the an submission already exists for that email
+ Create New Jon button on Jobs list Page 
+    Create New Job should be using Validations and also should have dropdown (research) for JobStatus
+    Create New Job and Save to Database
+ 
+ 
+REST API
+
+Company ABC
+
+Apply for the Jobs ->
+.NET Team Web APP using MVC C#, SQL Server Database
+
+Create an API (REST, Http), old API Web Services SOAP
+
+number of endpoints -> based on HTTP verbs GET, POST PUT DELETE
+
+GET http://recruting.com/api/jobs -> List of Jobs sorted by Created date
+GET http://recruting.com/api/jobs/1 -> Details of the Job
+POST http://recruting.com/api/jobs -> Admin will create a new Job
+
+POST http://recruting.com/api/submissions -> Apply for the Job by candidate
+GET http://recruting.com/api/submissions/jobs/1 -> Get all the submissions for a particular Job
+
+Provide a proper Documentation
+Swagger
+
+Mobile Team
+iOS (Swift) and Android(Java) app ->
+list of jobs => call the Recruiting API end point
+GET http://recruting.com/api/jobs ->
+ 
+
+ 
+ // Authenticated and also some roles -> HR, Admin,
+ 1. Admins can create jobs and can see the submissions 
+ 2. Admins can close a job
+ 3. Admins can schedule an interview
+ 4. Admins can create OnBoarding process, creating employees, editing employee details
+ 
+ 5. Employees should be able to see their info only when they log in
+ 6. Candidates can see only their submissions
+ 
+ 7. Interviewers can see what interviews they need to do
+ 
+ // public information
+ 8. List of jobs, searching for Jobs, Job details
+ 
+ 
+ We should be able to create accounts
+ 
+ Register in to your application
+ 
+ User -> Id, FirstName, LastName, password, email, salt, createdDate
+ 
+ Encryption -> CC, SSN, PI, Health, Security answers
+ 
+ Hashing the password with Salt
+ 
+ U1 -> test@test.com (abc123!!+ abdkjandkjn) HashinAlg1 -> skfbkjdsfkj6f9sa7f907s
+ U2 -> test2@tes.com (abc123!!+ sfcsldfsal)  HashinAlg1 -> kdihvgsfhsdjnfsjflslnmfs
+ 
+
+Login -> test@test.com (abc1231!!+abdkjandkjn) HashinAlg1 -> vgsfsdfsdfdsfsdfsf
+
+ASP.NET Core Identity + EF Core -> SQL Server
+
+iOS/Android/Web(SPA)
+
+POST -> http://example.com/api/account/login -> email/password 
+        verify the email/password and send the JWT back to the client
+
+SPA (Angular/React) -> localstorage
+
+Interviews
+GET -> http://example.com/api/interviews -> InterviewsController, GetAllInterviews() 
+    
+    JWT (sdfvnblkdsnflkdsjfldsnflkdsnmflksdnfkls) HTTP Header
+    Role of Admin
+    
+    [Authorize]
+    Middleware
+    
+
+POST -> http://example.com/api/interviews
+
+OnBoarding
+GET -> http://example.com/api/employees
+POST -> http://example.com/api/employees

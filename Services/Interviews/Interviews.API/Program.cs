@@ -1,5 +1,9 @@
+
+using System.Text;
 using Interviews.Infrastructure.Data;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.IdentityModel.Tokens;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -19,6 +23,23 @@ var dockerConnectionString = Environment.GetEnvironmentVariable("MSSQLConnection
 builder.Services.AddDbContext<InterviewsDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("InterviewsDbConnection")));
 
+// Microsoft.AspNetCore.Authentication.JwtBearer
+// Microsoft.IdentityModel.Tokens
+builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme  )
+    .AddJwtBearer(options =>
+    {
+        options.TokenValidationParameters = new TokenValidationParameters
+        {
+            ValidateIssuer = true,
+            ValidateAudience = true,
+            ValidateIssuerSigningKey = true,
+            ValidIssuer = "HRM",
+            ValidAudience = "HRM Users",
+            IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(builder.Configuration["SecretKey"]))
+        };
+    } );
+
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -29,6 +50,7 @@ app.UseSwaggerUI();
 //}
 app.UseHttpsRedirection();
 
+app.UseAuthentication();
 app.UseAuthorization();
 
 app.MapControllers();

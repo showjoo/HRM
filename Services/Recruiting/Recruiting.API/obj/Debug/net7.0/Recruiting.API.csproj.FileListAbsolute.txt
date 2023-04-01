@@ -550,3 +550,7 @@
 /Users/showjoo/Desktop/icc/Antra/HRM/Services/Recruiting/Recruiting.API/obj/Debug/net7.0/Recruiting.API.pdb
 /Users/showjoo/Desktop/icc/Antra/HRM/Services/Recruiting/Recruiting.API/obj/Debug/net7.0/Recruiting.API.genruntimeconfig.cache
 /Users/showjoo/Desktop/icc/Antra/HRM/Services/Recruiting/Recruiting.API/obj/Debug/net7.0/ref/Recruiting.API.dll
+/Users/showjoo/Desktop/icc/Antra/HRM/Services/Recruiting/Recruiting.API/bin/Debug/net7.0/Microsoft.EntityFrameworkCore.Design.dll
+/Users/showjoo/Desktop/icc/Antra/HRM/Services/Recruiting/Recruiting.API/bin/Debug/net7.0/Microsoft.Extensions.DependencyModel.dll
+/Users/showjoo/Desktop/icc/Antra/HRM/Services/Recruiting/Recruiting.API/bin/Debug/net7.0/Mono.TextTemplating.dll
+/Users/showjoo/Desktop/icc/Antra/HRM/Services/Recruiting/Recruiting.API/bin/Debug/net7.0/System.CodeDom.dll

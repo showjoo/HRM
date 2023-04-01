@@ -31,6 +31,9 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Recruiting.API", "Services\Recruiting\Recruiting.API\Recruiting.API.csproj", "{563AD61A-B6C3-45BD-9CE1-C77856C4ADC0}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{9B80A5D4-7526-4A1A-935C-DF8AA715226A}"
+	ProjectSection(SolutionItems) = preProject
+		Services\Notes.txt = Services\Notes.txt
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
